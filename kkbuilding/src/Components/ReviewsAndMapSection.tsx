@@ -5,6 +5,8 @@ const { Content } = Layout;
 const { Title, Text } = Typography;
 
 const ReviewsAndMapSection = () => {
+  console.log("new page");
+  
   return (
     <Content style={{ background: "#f9f9f9", padding: "50px 0" }}>
       {/* Map Section */}
