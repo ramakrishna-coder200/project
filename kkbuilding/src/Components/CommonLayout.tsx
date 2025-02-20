@@ -11,6 +11,8 @@ import {
   } from '@ant-design/icons';
 import AppFooter from './AppFooter';
 const CommonLayout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
+  console.log("one");
+  
   return (
     <Layout style={{ width: '100%' }}>
     {/* Header Section */}
