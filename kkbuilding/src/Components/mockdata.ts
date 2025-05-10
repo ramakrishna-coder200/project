@@ -1,18 +1,18 @@
 export const Testmonial=[
     {
       quote:
-        'The waterproofing service was excellent! Our basement has been completely dry even during heavy rains.',
-      client: 'John Doe',
+        'Good service at low cost and highly professional services with in budget great work.',
+      client: 'Pola Naveen',
     },
     {
       quote:
-        'The new flooring looks amazing! Thank you for transforming our living space.',
-      client: 'Jane Smith',
+        'Happy with your waterproofing service.Thank you Kranthi garu for taking extra care of our work.',
+      client: 'Koteswawrao chukka',
     },
     {
       quote:
         'The team did an incredible job with structural repairs on our property.',
-      client: 'Robert Brown',
+      client: 'Ramakrishna Appikonda',
     },
   ]
 

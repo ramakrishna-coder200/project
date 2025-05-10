@@ -12,14 +12,15 @@ import brand10 from '../assets/brands/brand9.svg.png';
 import brand11 from '../assets/brands/brand10.jpg';
 import brand12 from '../assets/brands/brand11.png';
 import brand13 from '../assets/brands/brand13.jpg';
-import React, { memo } from 'react';
+import brand14 from '../assets/brands/kfc.png';
+import brand15 from '../assets/brands/mondetez.jpg';
 
 const { Title } = Typography;
 
 const AntDMarquee = ({ speed = 60 }) => {
   const images = [
     brand1, brand2, brand3, brand4, brand5, brand6,
-    brand7, brand8, brand9, brand10, brand11, brand12, brand13
+    brand7, brand8, brand9, brand10, brand11, brand12, brand13,brand14,brand15
   ];
 
   return (

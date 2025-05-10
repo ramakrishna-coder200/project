@@ -26,10 +26,10 @@ const AppFooter: React.FC = () => {
             <MailOutlined style={{ fontSize: '24px', marginRight: '10px', color: '#ffffff' }} />
             <Text style={{ fontSize: '16px' }}>
               <a
-                href="mailto:kkbuildingsolutionsandservices@gmail.com"
+                href="mailto:Kkbsaservices@gmail.com"
                 style={{ color: '#fff', textDecoration: 'none' }}
               >
-                kkbuildingsolutionsandservices@gmail.com
+                Kkbsaservices@gmail.com
               </a>
             </Text>
           </div>
