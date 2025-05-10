@@ -53,6 +53,7 @@ const WhyChooseUs = () => {
                 padding: '20px',
                 boxShadow: '0 6px 15px rgba(0, 0, 0, 0.1)',
                 background: 'white',
+                height:'200px'
               }}
               bodyStyle={{ padding: '20px' }}
             >

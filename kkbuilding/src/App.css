@@ -126,6 +126,20 @@ body, html, #root {
   font-size: 20px;
 }
 
+
+.carousel-image {
+  width: 100%;
+  height: 400px; /* Fixed height */
+  object-fit: cover; /* This ensures the image scales correctly without stretching */
+}
+
+/* Optional: For mobile, adjust height to avoid excessive cropping */
+@media (max-width: 768px) {
+  .carousel-image {
+    height: 250px;
+  }
+}
+
 /* Smaller devices (e.g., tablets) */
 @media (max-width: 768px) {
   .header .main-title {
@@ -143,6 +157,9 @@ body, html, #root {
 @media (max-width: 480px) {
   .header .main-title {
     font-size: 10px;
+  }
+  .main-title{
+    font-size: 14px !important;
   }
   .hero-title {
     font-size: 28px;

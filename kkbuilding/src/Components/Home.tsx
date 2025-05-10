@@ -5,8 +5,10 @@ import Construction from "../assets/construction.jpeg";
 import AntDMarquee from '../Components/AntdMarquee';
 import whtsapp from '../assets/whatsapp.svg'
 import ReviewsAndMapSection from '../Components/ReviewsAndMapSection';
-import Services from '../Components/Services';
 import WhyChooseUs from '../Components/WhyChooseUs';
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+
 const {  Content, Footer } = Layout;
 const { Title, Text } = Typography;
 const stickyIconStyle = {
@@ -18,17 +20,22 @@ const stickyIconStyle = {
   cursor: 'pointer',
 };
 const Home = () => {
+  const location = useLocation();
 
-const getResponsiveFontSize = () => {
-  if (window.innerWidth <= 480) return '25px'; // Mobile
-  if (window.innerWidth <= 768) return '18px'; // Tablet
-  return '48px'; // Default
-};
+  useEffect(() => {
+    const hash = location.hash;
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
   return (
     <>
       {/* Sticky WhatsApp Icon */}
       <a
-        href="https://wa.me/1234567890" // Replace 1234567890 with your WhatsApp number in international format
+        href="https://wa.me/7416759126" 
         target="_blank"
         rel="noopener noreferrer"
         style={stickyIconStyle}
@@ -48,7 +55,6 @@ const getResponsiveFontSize = () => {
  <Title
   level={1}
   style={{
-    fontWeight: 'bold',
     fontFamily: 'Poppins',
   }}
   className='font'
@@ -80,11 +86,12 @@ const getResponsiveFontSize = () => {
         </Title>
         <Carousel autoplay>
           <div>
-            <img
-              src={WaterProof}
-              alt="Project 1"
-              style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover' }}
-              />
+          <img
+  src={WaterProof}
+  alt="Project 1"
+  className="carousel-image"
+/>
+
             <Title level={4} style={{ textAlign: 'center', marginTop: '10px' ,fontFamily:"Poppins" }}>
               Residential Water Proofing
             </Title>
@@ -93,7 +100,7 @@ const getResponsiveFontSize = () => {
             <img
               src={Flooring}
               alt="Project 2"
-              style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover' }}
+              className="carousel-image"
               />
             <Title level={4} style={{ textAlign: 'center', marginTop: '10px',fontFamily:"Poppins"  }}>
               Commercial Flooring
@@ -103,7 +110,7 @@ const getResponsiveFontSize = () => {
             <img
               src={Construction}
               alt="Project 3"
-              style={{ width: '100%', height: 'auto', maxHeight: '400px', objectFit: 'cover' }}
+              className="carousel-image"
               />
             <Title level={4} style={{ textAlign: 'center', marginTop: '10px' ,fontFamily:"Poppins" }}>
               Structural Repair Solutions
@@ -119,11 +126,11 @@ const getResponsiveFontSize = () => {
           About Us
         </Title>
         <Text style={{ fontSize: '16px', color: '#2E4053',fontFamily:"Poppins"  }}>
-          At <strong>KK Building Solutions & Services</strong>, we pride ourselves on delivering exceptional building services, transforming spaces with precision, and ensuring the highest quality standards. With over <strong>2 years of excellence</strong>, we have successfully completed <strong>35+ projects</strong>, building trust with our clients through our commitment to quality and innovation.
+          At <strong>KK Building Solutions & Services</strong>, we pride ourselves on delivering exceptional building services, transforming spaces with precision, and ensuring the highest quality standards. With over <strong>3 years of excellence</strong>, we have successfully completed <strong>35+ projects</strong>, building trust with our clients through our commitment to quality and innovation.
         </Text>
         <br />
         <Text style={{ fontSize: '16px', color: '#2E4053' ,fontFamily:"Poppins"}}>
-          Our team of <strong>30+ skilled professionals</strong> is dedicated to providing top-notch services in waterproofing, structural repairs, flooring, and more. Certified by <strong>Dr. Fixit "Projects Applicator"</strong> and <strong>Mykarment</strong>, we adhere to the most stringent industry standards, ensuring our services stand out in the building sector.
+          Our team of <strong>30+ skilled professionals</strong> is dedicated to providing top-notch services in waterproofing, structural repairs, flooring, and more. Certified by <strong>Fosroc ,Dr. Fixit , MYK Arment project applicator Mykarment</strong>, we adhere to the most stringent industry standards, ensuring our services stand out in the building sector.
         </Text>
         <br />
         {/* <Title level={4} style={{ color: '#2E4053', marginTop: '20px' ,fontFamily:"Poppins"}}>

@@ -1,6 +1,6 @@
 import  { useState } from 'react';
 import { Layout, Menu, Drawer, Button, Typography } from 'antd';
-import { MenuOutlined } from '@ant-design/icons';
+import { MenuOutlined, PhoneOutlined } from '@ant-design/icons';
 import Logo from "../assets/Logo.jpg";
 import '../App.css';
 import { Link } from 'react-router-dom';
@@ -32,9 +32,10 @@ const AppHeader = () => {
             fontFamily: 'Poppins',
             fontWeight: '600',
             color: '#FFFFFF',
+            textTransform:"capitalize"
           }}
         >
-          Building Services
+         Building solutions & services
         </span>
       </div>
         </a>
@@ -55,6 +56,7 @@ const AppHeader = () => {
         style={{
           background: 'transparent',
           fontFamily: 'Poppins',
+          textTransform:"uppercase"
         }}
         className="desktop-menu"
       >
@@ -65,10 +67,11 @@ const AppHeader = () => {
         <Link to="/services">Services</Link>
         </Menu.Item>
         <Menu.Item key="3">
-          <a href="#about-us">About Us</a>
+        <Link to="/#about-us">About Us</Link>
+
         </Menu.Item>
         <Menu.Item key="4">
-          <a href="#contact-us">Contact Us</a>
+        <a href='tel:+918297759126' style={{color:"#fff"}}> <PhoneOutlined />{' '}+918297759126</a> | {' '}
         </Menu.Item>
       </Menu>
 
@@ -99,7 +102,7 @@ const AppHeader = () => {
 >
   <Menu
     mode="vertical"
-    style={{ fontFamily: 'Poppins' }}
+    style={{ fontFamily: 'Poppins',textTransform:"uppercase" }}
     onClick={toggleDrawer} // Add this
   >
     <Menu.Item key="1">
@@ -109,10 +112,10 @@ const AppHeader = () => {
       <Link to="/services">Services</Link>
     </Menu.Item>
     <Menu.Item key="3">
-      <a href="#about-us">About Us</a>
+    <Link to="/#about-us">About Us</Link>
     </Menu.Item>
     <Menu.Item key="4">
-      <a href="#contact-us">Contact Us</a>
+    <a href='tel:+918297759126' style={{color:"#000"}}> <PhoneOutlined />{' '}+918297759126</a>  {' '}
     </Menu.Item>
   </Menu>
 </Drawer>

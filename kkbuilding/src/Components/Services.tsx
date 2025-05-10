@@ -22,6 +22,7 @@ const Services = () => {
                 borderRadius: '8px',
                 boxShadow: '0 4px 12px rgba(0, 0, 0, 0.1)',
                 transition: 'transform 0.3s ease-in-out', // Smooth transition for hover effect
+                height:'200px'
               }}
               className="service-card" // Apply custom class for hover effect
             >

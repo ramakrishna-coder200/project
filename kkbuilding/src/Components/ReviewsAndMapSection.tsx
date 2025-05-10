@@ -4,9 +4,7 @@ import { Testmonial } from "./mockdata";
 const { Content } = Layout;
 const { Title, Text } = Typography;
 
-const ReviewsAndMapSection = () => {
-  console.log("new page");
-  
+const ReviewsAndMapSection = () => {  
   return (
     <Content style={{ background: "#f9f9f9", padding: "50px 0" }}>
       {/* Map Section */}
@@ -17,7 +15,7 @@ const ReviewsAndMapSection = () => {
         </Title>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3157.9271017443456!2d83.20597631583567!3d17.6882588226298!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3969d2e26df763%3A0x9345db97fdfb2b37!2sKk%20Building%20Solutions%20and%20Services!5e0!3m2!1sen!2sin!4v1693476825345!5m2!1sen!2sin"
-          width="100%"
+          width="90%"
           height="350"
           style={{ border: 0, borderRadius: "10px" }}
           allowFullScreen=""
@@ -48,7 +46,7 @@ const ReviewsAndMapSection = () => {
             </Col>
           ))}
         </Row>
-        <a href="https://www.google.com/maps/place/Kk+Building+Solutions+and+Services/@17.6865314,83.2059763,15.75z/data=!4m8!3m7!1s0x3a3969d2e26df763:0x9345db97fdfb2b37!8m2!3d17.6882588!4d83.205475!9m1!1b1!16s%2Fg%2F11p68247n6?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D">
+        <a href="https://www.google.com/maps/place/Kk+Building+Solutions+and+Services/@17.6865314,83.2059763,15.75z/data=!4m8!3m7!1s0x3a3969d2e26df763:0x9345db97fdfb2b37!8m2!3d17.6882588!4d83.205475!9m1!1b1!16s%2Fg%2F11p68247n6?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
 
 <Button
   type="primary"
